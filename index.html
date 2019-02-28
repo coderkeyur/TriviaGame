@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <!--My CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="offset-lg-1">
+                <div class="col-lg-11 col-md-12 col-sm-12 bg-light mt-4">
+                    <div class="title h1 text-center py-3 triviaTitle">
+                        Totally Trivial Trivia!
+                        <hr>
+                    </div>
+                    <div class="jumbotran, text-center my-5" id="startGame">
+                        <div class="btn btn-primary btn-lg my-5" id="startBtn">Start Quiz</div>
+                    </div>
+                    <div class="jumbotran text-center" id="gameArea">
+                        <div class="container" id="Qs">
+                            <div id="time"></div>
+                            <div class="question"></div><br>
+                            <div class="choices"></div>
+                        </div>
+                        <div class="container" id="Ans">
+                            <div id="text"></div>
+                            <div id="correctAnswer"></div>
+                        </div>
+                        <div class="container" id="Res">
+                            <div id="resultText"></div>
+                            <div id="correctAnswers"></div>
+                            <div id="wrongAnswers"></div>
+                            <div id="unanswered"></div> <br>
+                            <div class="restartGame text-center">
+                                <div class="btn btn-warning btn-lg m-3" id="restartGameBtn">Restart Game</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!--My js script-->
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
